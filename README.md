@@ -285,21 +285,16 @@ For larger deployments:
 
 # Screenshots
 
-Add screenshots of:
-
-* Dashboard
-* Create Order
-* Real-Time Update
-* Delete Operation
-
-Example:
-
 ```md
 ![Dashboard](README-assets/dashboard.png)
+
+![create-order](README-assets/create-order.png)
 
 ![Real-Time Update](README-assets/realtime-update.png)
 
 ![Real-Time Update](README-assets/realtime-update_2.png)
+
+![Real-Time Delete](README-assets/delete-order.png)
 ```
 
 ---
