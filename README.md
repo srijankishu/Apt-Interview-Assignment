@@ -300,7 +300,7 @@ For larger deployments:
 
 ### Real-Time Update (Status Change)
 
-![Real-Time Update](README-assets/realtime_update_2.png)
+![Real-Time Update](README-assets/realtime-update_2.png)
 
 ### Real-Time Delete
 
