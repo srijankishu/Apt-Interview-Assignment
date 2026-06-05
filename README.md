@@ -99,7 +99,8 @@ Vercel
 # Project Structure
 
 ```text
-ATP
+Project Structure
+Apt-Interview-Assignment
 │
 ├── backend
 │   │
@@ -122,6 +123,8 @@ ATP
 │   │   └── main.jsx
 │   │
 │   └── package.json
+│
+├── README-assets
 │
 └── README.md
 ```
@@ -177,8 +180,8 @@ DELETE `/api/orders/delete/:id`
 ## Clone Repository
 
 ```bash
-git clone <repository-url>
-cd ATP
+git clone https://github.com/srijankishu/Apt-Interview-Assignment.git 
+cd Apt-Interview-Assignment
 ```
 
 ---
