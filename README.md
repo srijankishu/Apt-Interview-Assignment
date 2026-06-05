@@ -298,6 +298,8 @@ Example:
 ![Dashboard](README-assets/dashboard.png)
 
 ![Real-Time Update](README-assets/realtime-update.png)
+
+![Real-Time Update](README-assets/realtime-update_2.png)
 ```
 
 ---
