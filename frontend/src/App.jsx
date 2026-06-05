@@ -6,44 +6,37 @@ function App() {
   const [orders, setOrders] = useState([]);
   const [message, setMessage] = useState("");
 
-  useEffect(() => {
-    const fetchOrders = async () => {
-      try {
-        const res = await axios.get(
-          "https://apt-interview-assignment-dujd.onrender.com/api/orders/get"
-        );
+  const fetchOrders = async () => {
+  try {
+    const res = await axios.get(
+      "https://apt-interview-assignment-dujd.onrender.com/api/orders/get"
+    );
 
-        setOrders(res.data);
-      } catch (err) {
-        console.error(err);
-      }
-    };
-    fetchOrders();
+    setOrders(res.data);
+  } catch (err) {
+    console.error(err);
+  }
+};
 
-    const socket = io("https://apt-interview-assignment-dujd.onrender.com/");
+useEffect(() => {
+  fetchOrders();
 
-    socket.on("order-update", async (event) => {
-      setMessage(
-        `${event.operation.toUpperCase()} received`
-      );
+  const socket = io(
+    "https://apt-interview-assignment-dujd.onrender.com"
+  );
 
-      setTimeout(() => {
-        setMessage("");
-      }, 3000);
+  socket.on("order-update", async (event) => {
+    setMessage(`${event.operation.toUpperCase()} received`);
 
-      try {
-        const res = await axios.get(
-          "https://apt-interview-assignment-dujd.onrender.com/api/orders/get"
-        );
+    setTimeout(() => {
+      setMessage("");
+    }, 3000);
 
-        setOrders(res.data);
-      } catch (err) {
-        console.error(err);
-      }
-    });
+    await fetchOrders();
+  });
 
-    return () => socket.disconnect();
-  }, []);
+  return () => socket.disconnect();
+}, []);
 
   return (
     <div className="min-h-screen bg-slate-100">

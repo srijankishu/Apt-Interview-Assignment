@@ -21,7 +21,7 @@ const httpServer = createServer(app);
 
 const io = new Server(httpServer, {
   cors: {
-    origin: "*",
+    origin: "https://apt-interview-assignment-cp7fnxbg1-srijan-s-projects-7fb3208a.vercel.app",
   },
 });
 
