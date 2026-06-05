@@ -283,19 +283,28 @@ For larger deployments:
 
 ---
 
-# Screenshots
 
-```md
+## Screenshots
+
+### Dashboard
+
 ![Dashboard](README-assets/dashboard.png)
 
-![create-order](README-assets/create-order.png)
+### Create Order
+
+![Create Order](README-assets/create-order.png)
+
+### Real-Time Update
 
 ![Real-Time Update](README-assets/realtime-update.png)
 
-![Real-Time Update](README-assets/realtime-update_2.png)
+### Real-Time Update (Status Change)
+
+![Real-Time Update](README-assets/realtime_update_2.png)
+
+### Real-Time Delete
 
 ![Real-Time Delete](README-assets/delete-order.png)
-```
 
 ---
 
