@@ -10,7 +10,7 @@ function App() {
     const fetchOrders = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:5000/api/orders/get"
+          "https://apt-interview-assignment-dujd.onrender.com/api/orders/get"
         );
 
         setOrders(res.data);
@@ -20,7 +20,7 @@ function App() {
     };
     fetchOrders();
 
-    const socket = io("http://localhost:5000");
+    const socket = io("https://apt-interview-assignment-dujd.onrender.com/");
 
     socket.on("order-update", async (event) => {
       setMessage(
@@ -33,7 +33,7 @@ function App() {
 
       try {
         const res = await axios.get(
-          "http://localhost:5000/api/orders/get"
+          "https://apt-interview-assignment-dujd.onrender.com/api/orders/get"
         );
 
         setOrders(res.data);
