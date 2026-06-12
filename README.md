@@ -3,7 +3,7 @@
 ## Live Demo
 
 **Frontend (Vercel):**
-https://apt-interview-assignment-cp7fnxbg1-srijan-s-projects-7fb3208a.vercel.app/
+https://apt-interview-assignment-nine.vercel.app/
 
 **Backend (Render):**
 https://apt-interview-assignment-dujd.onrender.com
